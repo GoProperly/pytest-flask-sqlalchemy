@@ -13,7 +13,7 @@ def _db():
     Session object that can access the test database. If the user hasn't defined
     that fixture, raise an error.
     '''
-    msg = ("_db fixture not defined. The properly-pytest-flask-sqlalchemy plugin " +
+    msg = ("_db fixture not defined. The pytest-flask-sqlalchemy plugin " +
            "requires you to define a _db fixture that returns a SQLAlchemy Session " +
            "with access to your test database. For more information, see the plugin " +
            "documentation: " +
