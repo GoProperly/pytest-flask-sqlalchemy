@@ -18,7 +18,7 @@ except KeyError:
 else:
     DB_OPTS = sa.engine.url.make_url(DB_CONN).translate_connect_args()
 
-pytest_plugins = ['pytest-flask-sqlalchemy']
+pytest_plugins = ['properly-pytest-flask-sqlalchemy']
 
 
 @pytest.fixture(scope='session')
