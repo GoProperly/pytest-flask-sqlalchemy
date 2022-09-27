@@ -15,7 +15,7 @@ setup(
     long_description_content_type='text/markdown',
     license='MIT',
     version='1.2.0',
-    packages=['pytest_flask_sqlalchemy'],
+    packages=['properly_pytest_flask_sqlalchemy'],
     install_requires=['pytest>=3.2.1',
                       'pytest-mock>=1.6.2',
                       'SQLAlchemy>=1.2.2',
@@ -37,7 +37,7 @@ setup(
     # Make the package available to pytest
     entry_points={
         'pytest11': [
-            'pytest-flask-sqlalchemy = pytest_flask_sqlalchemy.plugin',
+            'properly-pytest-flask-sqlalchemy = properly_pytest_flask_sqlalchemy.plugin',
         ]
     },
 )
